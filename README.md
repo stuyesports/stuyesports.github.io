@@ -1,2 +1,2 @@
-# stuyesports.github.io
+# StuyEsports
 The Official Website for StuyEsports (SCGC)
