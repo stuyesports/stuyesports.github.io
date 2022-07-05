@@ -3,21 +3,68 @@
 <head>
     <title>StuyEsports</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="aos.css" />
+    <link rel="icon" href="./resource/imgs/stuyesportstransparent.png">
     <meta content="StuyEsports" property="og:title">
     <meta content="Official Website of the SCGC" property="og:description">
     <meta content="https://stuyesports.github.io" property="og:url">
-    <meta content="#9b59b6" data-react-helmet="true" name="theme-color">
-    <meta content="https://cdn.discordapp.com/attachments/916784140924366848/991860421801816174/stuyesports.png"
+    <meta content="#74b9ff" data-react-helmet="true" name="theme-color">
+    <meta content="https://cdn.discordapp.com/attachments/993366013951344770/993366022809718874/unknown.png"
         property="og:image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>This is placeholder until someone actually does something :D</h1>
+    <nav class="navbar">
+        <img src="./resource/imgs/hamburgericon.png" id="hamburgerIcon">
+        <div id="navbarCenter">
+            <a class="navElem" href="#">
+                <div class="fullText">Home</div>
+            </a>
+            <div class="navLogo" herf="#"></div>
+            <a class="navElem" href="#">
+                <div class="fullText">Sponsors</div>
+            </a>
+        </div>
+        <div id="navLogoHidden" class="navLogo" herf="#"></div>
+    </nav>
+    <div id="homeHeading">
+        <div class="homeTitle">
+            <div class="homeTitleText" data-aos="fade-in" data-aos-delay="100" data-aos-duration="1000">StuyEsports
+            </div>
+            <div class="sponsors" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
+                <div class="sponsorsText">Sponsored By</div>
+                <div class="sponsorCardFiller">Email stuy.esports@gmail.com for inquiries!</div>
+                <div class="sponsorCardFiller">Email stuy.esports@gmail.com for inquiries!</div>
+                <div class="sponsorCardFiller">Email stuy.esports@gmail.com for inquiries!</div>
+            </div>
+        </div>
+        <div class="homeMedia">
+            <div class="socials"></div>
+            <a class="discord" href="https://discord.gg/ygbgFYS" target="_blank">Join the Discord!</a>
+        </div>
+    </div>
+    </div>
+    <div id="homeAbout" data-aos="fade-right">
+        <div class="aboutParagraph">
+            <div class="aboutTitle">Who we are</div>
+            The Stuyvesant Competitive Gaming Club (SCGC) is Stuyvesant's largest Gaming Community, providing a casual
+            environment (the club) and a competitive environment (StuyEsports) for players of all skill level. For
+            competitive play, we have teams participating in EzEsports, a city-wide esports league for League of Legends
+            and Valorant.
+        </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="./jquery-3.6.0.min.js" type="text/javascript"></script>
-    <script src="./index.js" type="module"></script>
+    </div>
+
+    <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="jquery.dropotron.min.js"></script>
+    <script src="index.js" type="module"></script>
+    <script src="aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
