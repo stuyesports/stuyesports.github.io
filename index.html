@@ -3,7 +3,7 @@
 <head>
     <title>StuyEsports</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="aos.css" />
+    <link rel="stylesheet" href="resource/css/aos.css" />
     <link rel="icon" href="./resource/imgs/stuyesportstransparent.png">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
             <a class="navElem" href="#">
                 <div class="fullText">Home</div>
             </a>
-            <div class="navLogo" herf="#"></div>
+            <div class="navLogo"></div>
             <a class="navElem" href="#">
                 <div class="fullText">Sponsors</div>
             </a>
@@ -44,7 +44,18 @@
             </div>
         </div>
         <div class="homeMedia">
-            <div class="socials"></div>
+            <div class="socials">
+                <div class="socialLogoCont">
+                    <a class="youtube socialLogo" href="https://www.youtube.com/channel/UCkPNldH6NcLuMNUKkqZm5Ew"
+                        target="_blank"></a>
+                </div>
+                <div class="socialLogoCont">
+                    <a class="twitch socialLogo" href="https://www.twitch.tv/stuyesports" target="_blank"></a>
+                </div>
+                <div class="socialLogoCont">
+                    <a class="instagram socialLogo" href="https://www.instagram.com/stuyesports/" target="_blank"></a>
+                </div>
+            </div>
             <a class="discord" href="https://discord.gg/ygbgFYS" target="_blank">Join the Discord!</a>
         </div>
     </div>
@@ -57,13 +68,37 @@
             competitive play, we have teams participating in EzEsports, a city-wide esports league for League of Legends
             and Valorant.
         </div>
+    </div>
+    <div id="homeTeams">
+        <div id="homeTeamsTitle" data-aos="fade-in">
+            Rosters
+        </div>
+        <a href="#" id="valorantTeam" data-aos="fade-right">
+            <div class="zindex3">Valorant</div>
+            <div class="colorOverlayRed"></div>
+        </a>
+        <a href="#" id="leagueTeam" data-aos="fade-left">
+            <div class="zindex3">League of Legends</div>
+            <div class="colorOverlayBlue"></div>
+        </a>
 
     </div>
+    <div class="noGame">
+        <div class="noGameTitle">Don't see your game?</div>
+        <div class="noGameDesc">If you believe that your game has a large enough following to create a team, contact
+            an admin in the discord server and we'll take your requests into consideration, forwarding it to other
+            clubs.
+        </div>
+    </div>
+    <div id="footer">
+        Stuyvesant Competitive Gaming Club, StuyEsports © 2022
+    </div>
 
-    <script src="jquery-3.6.0.min.js" type="text/javascript"></script>
-    <script src="jquery.dropotron.min.js"></script>
+
+    <script src="resource/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="resource/js/jquery.dropotron.min.js"></script>
     <script src="index.js" type="module"></script>
-    <script src="aos.js"></script>
+    <script src="resource/js/aos.js"></script>
     <script>
         AOS.init();
     </script>
