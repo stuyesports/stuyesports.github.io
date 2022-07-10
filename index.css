@@ -86,7 +86,6 @@ body {
     flex-wrap: wrap;
     width: 100%;
     background: rgb(37, 37, 37);
-    z-index: -1;
     margin-top: -50px;
     padding-top: 50px;
     position: relative;
@@ -145,8 +144,9 @@ body {
     padding-left: 10px;
     padding-right: 10px;
     flex-wrap: wrap;
-    background-color: rgb(208, 208, 208);
+    border: 5px solid rgb(208, 208, 208);
     border-radius: 5px;
+    color: #fff;
 }
 
 .sponsorsText {
@@ -260,6 +260,8 @@ body {
 
 .socialLogo {
     transition: 0.3s all ease;
+    z-index: 13;
+    cursor: pointer;
 }
 
 .socialLogo:hover {
@@ -284,6 +286,7 @@ body {
     flex-wrap: wrap;
     background: #fff;
     margin-top: 20px;
+    justify-content: center;
 }
 
 #homeTeamsTitle {
@@ -297,7 +300,8 @@ body {
 }
 
 #valorantTeam {
-    width: 100%;
+    width: 80%;
+    min-width: 500px;
     height: 200px;
     background-image: url("resource/imgs/valorantbackground.jpg");
     background-size: cover;
@@ -314,13 +318,19 @@ body {
     text-decoration: none;
 }
 
+.break {
+    display: block;
+    width: 100%;
+}
+
 #valorantTeam:hover {
     transition: 0.6s all ease;
     filter: brightness(60%);
 }
 
 #leagueTeam {
-    width: 100%;
+    width: 80%;
+    min-width: 500px;
     height: 200px;
     background-image: url("resource/imgs/leaguebackground.jpg");
     background-size: cover;
@@ -350,6 +360,7 @@ body {
     align-items: center;
     padding-left: 2%;
     padding-top: 10px;
+    margin-top: 50px;
 }
 
 .noGameTitle {
