@@ -22,7 +22,12 @@ html,
 body {
     margin: 0;
     padding: 0;
+}
+
+.pageWrapper {
+    position: relative;
     overflow-x: clip;
+    height: auto;
 }
 
 .navbar {
