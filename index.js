@@ -33,6 +33,7 @@ if (!isMobile) {
             document.getElementById("navbarCenter").classList.add("show");
         }
     })
-} else {
-
 }
+
+
+

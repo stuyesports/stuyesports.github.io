@@ -5,7 +5,17 @@
 
 @font-face {
     font-family: valorant;
-    src: url("./resource/fonts/valorant.ttf")
+    src: url("./resource/fonts/valorant.ttf");
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url("./resource/fonts/robotoregular.ttf");
+}
+
+@font-face {
+    font-family: roboto-mono;
+    src: url("./resource/fonts/robotomono.ttf");
 }
 
 html,
@@ -26,7 +36,7 @@ body {
     justify-content: center;
     padding-left: 100px;
     padding-right: 100px;
-    z-index: 7;
+    z-index: 100;
 }
 
 #navbarCenter {
@@ -69,7 +79,7 @@ body {
 }
 
 .scrolled {
-    background-color: rgb(19, 19, 19) !important;
+    background-color: rgb(0, 0, 0) !important;
     transition: background-color 200ms linear;
 }
 
@@ -81,33 +91,39 @@ body {
 
 #homeHeading {
     display: flex;
-    min-height: 1000px;
+    min-height: 900px;
     overflow: hidden;
     flex-wrap: wrap;
     width: 100%;
-    background: rgb(37, 37, 37);
+    background: #0e1921;
     margin-top: -50px;
-    padding-top: 50px;
     position: relative;
+}
+
+#headerVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    opacity: 0.5;
+    z-index: 0;
 }
 
 .homeTitle {
     width: 100%;
-    height: auto;
+    height: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 10%;
     align-content: flex-start;
+    z-index: 1;
+    position: relative;
 }
 
-.homeTitleText {
-    font-family: valorant;
-    font-size: 150px;
-    color: #fff;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.homeHeadingLogo {
+    position: absolute;
+    top: -100px;
 }
 
 #hamburgerIcon {
@@ -174,24 +190,51 @@ body {
     align-items: center;
 }
 
-.discord {
+.mainBtn {
+    font-family: roboto-mono;
     text-decoration: none;
-    color: #fff;
     width: 300px;
-    height: 50px;
+    height: 75px;
     border-radius: 5px;
-    background-color: #7289da;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.mainBtnCont {
+    width: 700px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.discord {
+    color: #fff;
+    background-color: #7289da;
+    margin-top: 20px;
 }
 
 .discord:hover {
     transition: 0.6s all ease;
     color: rgb(220, 220, 220);
     background-color: #4e5d94;
+}
+
+.contactus {
+    background: #fff;
+    color: rgb(34, 34, 34);
+    margin-top: 20px;
+}
+
+.contactus:hover {
+    transition: 0.6s all ease;
+    color: #000;
+    background-color: #9d9d9d;
 }
 
 #homeAbout {
@@ -235,16 +278,14 @@ body {
 .youtube {
     width: 100px;
     height: 100px;
-    border-radius: 100%;
-    background-image: url("resource/imgs/youtubelogo.webp");
+    background-image: url("resource/imgs/youtubelogo.png");
     background-size: cover;
-    background-position: -24px 0px;
+
 }
 
 .twitch {
     width: 100px;
     height: 100px;
-    border-radius: 100%;
     background-image: url("resource/imgs/twitchlogo.jpg");
     background-size: cover;
     background-position: -24px 0px;
@@ -253,7 +294,6 @@ body {
 .instagram {
     width: 100px;
     height: 100px;
-    border-radius: 100%;
     background-image: url("resource/imgs/instagramlogo.webp");
     background-size: cover;
 }
@@ -262,6 +302,7 @@ body {
     transition: 0.3s all ease;
     z-index: 13;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .socialLogo:hover {
@@ -358,16 +399,23 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding-left: 2%;
-    padding-top: 10px;
+    padding: 10px;
     margin-top: 50px;
 }
 
 .noGameTitle {
     width: 100%;
     display: flex;
+    justify-content: center;
     font-size: 50px;
     color: #000;
+    margin-bottom: 20px;
+}
+
+.noGameDesc {
+    max-width: 1000px;
 }
 
 .colorOverlayRed {
@@ -406,6 +454,18 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    #homeHeading {
+        min-height: 800px;
+    }
+
+    #headerVideo {
+        position: absolute;
+        right: -550px;
+    }
+
+    .homeTitle {
+        height: 100px;
+    }
 
     .homeTitleText {
         font-size: 50px;
