@@ -26,7 +26,7 @@ body {
 
 .pageWrapper {
     position: relative;
-    overflow-x: clip;
+    overflow-x: hidden;
     height: auto;
 }
 
