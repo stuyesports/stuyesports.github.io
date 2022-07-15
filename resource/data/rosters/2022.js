@@ -1,24 +1,36 @@
-let TEAMS = {
+let t2022 = {
     valorant: {
-        captain: "Hidden",
-        members: ["Hidden", "Hidden", "Hidden", "Hidden"],
-        awards: [
-            {
-                title: "EzEsports Qualifier",
-                desc: "Qualifier for EzEsports Playoffs - Valorant"
-            }
-        ],
-        matches: []
+        a: {
+            members: ["Hidden - Captain", "Hidden", "Hidden", "Hidden", "Hidden"],
+            subs: ["Hidden"],
+            awards: [
+                {
+                    title: "EzEsports Qualifier",
+                    desc: "Qualifier for EzEsports Playoffs A - Valorant"
+                }
+            ],
+            matches: []
+        },
+        b: {
+            members: ["Hidden - Captain", "Hidden", "Hidden", "Hidden", "Hidden"],
+            subs: ["Hidden"],
+            awards: [],
+            matches: []
+        }
     },
     league: {
-        captain: "Hidden",
-        members: ["Hidden", "Hidden", "Hidden", "Hidden"],
-        awards: [
-            {
-                title: "EzEsports Winner",
-                desc: "1st Place for EzEsports Playoffs - League of Legends"
-            }
-        ],
-        matches: []
+        a: {
+            members: ["Hidden - Captain", "Hidden", "Hidden", "Hidden", "Hidden"],
+            subs: ["Hidden"],
+            awards: [
+                {
+                    title: "EzEsports Winner",
+                    desc: "1st Place for EzEsports Playoffs A - League of Legends"
+                }
+            ],
+            matches: []
+        },
     }
 };
+
+export default t2022;

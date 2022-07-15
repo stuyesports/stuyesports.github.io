@@ -16,12 +16,15 @@ function detectMob() {
 
 const isMobile = detectMob();
 
-$(() => {
-    $(document).scroll(function () {
-        var $nav = $(".navbar");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-});
+window.onload = () => {
+    let video = document.getElementById("headerVideo");
+    if (!isMobile) {
+        video.setAttribute("autoplay", "");
+        video.play();
+    } else {
+        video.parentNode.removeChild(video);
+    }
+}
 
 $("#hamburgerIcon").on("click", () => {
     document.getElementById("navbarCenter").classList.toggle("show");
