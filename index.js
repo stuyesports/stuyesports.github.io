@@ -15,14 +15,18 @@ function detectMob() {
 }
 
 const isMobile = detectMob();
+let video = document.getElementById("headerVideo");
+if (isMobile) {
+    video.parentNode.removeChild(video);
+}
+
+
 
 window.onload = () => {
-    let video = document.getElementById("headerVideo");
+
     if (!isMobile) {
         video.setAttribute("autoplay", "");
         video.play();
-    } else {
-        video.parentNode.removeChild(video);
     }
 }
 
