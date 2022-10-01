@@ -22,7 +22,7 @@ html,
 body {
     margin: 0;
     padding-top: 10px;
-    background: #0e1921;
+    background: #000;
 }
 
 h2{
@@ -65,17 +65,43 @@ h1{
     width: 100%;
     align-items: center;
     margin-bottom: 100px;
-}
-
-.playerRow{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.playerRow{
     align-items: center;
 }
 
 .playerCard{
-    margin:30px;
+    margin-top: 30px;
+    position: relative;
+    cursor: pointer;
+    height: 500px;
+    width: 550px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.playerInfoCont {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.playerName {
+    font-size: 60px;
+    color: #fff;
+}
+
+.playerRole {
+    font-size: 40px;
+    color: #fff;
 }
 
 #gameTitle {
@@ -113,10 +139,14 @@ h1{
     padding: 10px;
 }
 
-#personIMG{
-    height:500px;
+.personIMG{
+    position: relative;
+    height:100%;
     margin:3px;
-    border: 5px solid #2596be;
+}
+
+.placeholderCard {
+    width: 600px;
 }
 
 #bteam {
@@ -137,8 +167,20 @@ img.grayscaleZoom {
     -webkit-backface-visibility: hidden;
 }
   
-img.grayscaleZoom:hover {
+.playerCard:hover img.grayscaleZoom {
     filter: none;
     -webkit-filter: grayscale(0%);
-    transform: scale(1.1);
+}
+
+@media screen and (max-width: 767px) {
+    .playerCard {
+        height: 300px;
+        width: 330px;
+    }
+    .playerRole {
+        visibility: hidden;
+    }
+    .playerName {
+        font-size: 50px;
+    }
 }
