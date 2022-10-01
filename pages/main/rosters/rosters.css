@@ -25,6 +25,13 @@ body {
     background: #0e1921;
 }
 
+h2{
+    color: #fff;
+}
+h1{
+    color: #fff;
+}
+
 .break {
     width: 100%;
     display: block;
@@ -52,22 +59,30 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
 }
 
 .players {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.playerRow{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
     align-items: center;
-    height: auto;
+}
+
+.playerCard{
+    margin:30px;
 }
 
 #gameTitle {
-    font-size: 50px;
+    text-align: center;
+    font-size: 100px;
     color: #fff;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 #awardsTitle {
@@ -75,20 +90,20 @@ body {
     font-size: 50px;
     text-align: center;
     color: #fff;
-    margin-top: 20px;
 }
 
 .lazyDisclaimer {
     width: 100%;
-    font-size: 16px;
+    font-size: 70px;
     color: #fff;
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin: 80px;
 }
 
 .team {
     width: 500px;
-    background: #fff;
     border-radius: 5px;
     height: 300px;
     display: flex;
@@ -98,17 +113,32 @@ body {
     padding: 10px;
 }
 
+#personIMG{
+    height:500px;
+    margin:3px;
+    border: 5px solid #2596be;
+}
+
 #bteam {
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 #ateam {
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 #awards {
     font-size: 16px;
     color: #fff;
+}
+img.grayscaleZoom {
+    -webkit-filter: grayscale(100%); 
+    -webkit-transition: all .6s ease;
+    -webkit-backface-visibility: hidden;
+}
+  
+img.grayscaleZoom:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    transform: scale(1.1);
 }
