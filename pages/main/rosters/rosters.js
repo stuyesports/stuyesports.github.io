@@ -1,8 +1,4 @@
-import t2022 from "../../../resource/data/rosters/2022.js";
-
-const TEAMS = {
-    "2022": t2022,
-}
+import TEAMS from "../../../resource/data/rosters/rosterdata.js";
 
 let ateam = document.getElementById("ateam");
 let bteam = document.getElementById("bteam");
