@@ -1,6 +1,7 @@
 import TEAMS from "../../../resource/data/rosters/rosterdata.js";
 
 let playerNamesList = document.getElementsByClassName("playerName");
+let awards = document.getElementById("awards");
 
 let selection = ["valorant", "2022"];
 
@@ -20,8 +21,6 @@ if (game) {
 const LoadSelection = () => {
     let d = TEAMS[selection[1]][selection[0]];
 
-    
-
     let l = 0;
     for(var i = 0; i < playerNamesList.length; i++){
         if(l < 5){
@@ -38,6 +37,8 @@ const LoadSelection = () => {
         }
         l++;
     }
+
+    awards.innerHTML = d.a.awards.map(award => award.title + ": " + award.desc);
 }
 
 LoadSelection();
