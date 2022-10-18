@@ -5,18 +5,18 @@ let awards = document.getElementById("awards");
 
 let selection = ["valorant", "2022"];
 
-const params = new Proxy(new URLSearchParams(window.location.search), {
-    get: (searchParams, prop) => searchParams.get(prop),
-});
+// const params = new Proxy(new URLSearchParams(window.location.search), {
+//     get: (searchParams, prop) => searchParams.get(prop),
+// });
 
-let game = params.game;
+// let game = params.game;
 
-if (game) {
-    selection[0] = game;
-    $(document).ready(() => {
-        $("#gameDrop").val(game);
-    })
-}
+// if (game) {
+//     selection[0] = game;
+//     $(document).ready(() => {
+//         $("#gameDrop").val(game);
+//     })
+// }
 
 const LoadSelection = () => {
     let d = TEAMS[selection[1]][selection[0]];
