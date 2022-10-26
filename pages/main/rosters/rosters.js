@@ -1,4 +1,4 @@
-import TEAMS from "../../../resource/data/rosters/2022.js";
+import TEAMS from "../../../resource/data/rosters/rosterdata.js";
 
 let ateam = document.getElementById("ateam");
 let bteam = document.getElementById("bteam");
