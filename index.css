@@ -51,12 +51,9 @@ header{
     text-decoration: none;
 }
 
-
-.navLogo {
-    background-image: url("./resource/imgs/stuyesportstransparent.png");
-    background-size: cover;
-    width: 90px;
-    height: 90px;
+.logo{
+    position: absolute;
+    z-index:10000;
 }
 
 .navbar a:hover{
@@ -65,14 +62,15 @@ header{
 }
 
 .fullText:hover ul{
-    display: block;
+    left:0px;
+    transition-delay: 0.1s;
 }
 
 .fulltext ul{
+    transition-delay: 2s;
     position: absolute;
     list-style-type: none;
-    display:none;
-    color: white;
+    left:-9999px;
     text-decoration: none;
     background-color: whitesmoke;
     padding:5px;
