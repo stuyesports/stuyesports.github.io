@@ -111,10 +111,6 @@ header{
     justify-content: space-around;
 }
 
-.playerRow{
-    align-items: center;
-}
-
 .playerCard{
     margin-top: 30px;
     position: relative;

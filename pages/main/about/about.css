@@ -32,12 +32,67 @@ h1{
     color: #fff;
 }
 
+.about{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
 #aboutTitle{
     font-size: 100px;
     margin-top: 80px;
     margin-left: 50px;
     color: #fff;
     text-align: center;
+}
+
+.leadership{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.leadershipCard{
+    margin-top: 30px;
+    position: relative;
+    cursor: pointer;
+    height: 500px;
+    width: 550px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.leadershipImg{
+    height:600px;
+    width:530px;
+    margin:3px;
+    position: relative;
+}
+
+.leadershipInfoCount{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.name{
+    font-size: 56px;
+    color: #fff;
+    -webkit-text-stroke: 2px #000;
+}
+
+.role {
+    font-size: 40px;
+    color: #fff;
+    -webkit-text-stroke: 2px #000;
 }
 
 .description{
