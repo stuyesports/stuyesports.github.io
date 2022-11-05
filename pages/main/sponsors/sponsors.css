@@ -1,0 +1,150 @@
+@font-face {
+    font-family: valorant;
+    src: url("../../../resource/fonts/valorant.ttf");
+}
+
+@font-face {
+    font-family: roboto-regular;
+    src: url("../../../resource/fonts/robotoregular.ttf");
+}
+
+@font-face {
+    font-family: roboto-mono;
+    src: url("../../../resource/fonts/robotomono.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Impact, fantasy;
+}
+
+html,
+body {
+    margin: 0;
+    padding-top: 10px;
+    background: #0e1921;
+}
+
+h2{
+    color: #fff;
+}
+h1{
+    color: #fff;
+}
+
+.sponsors{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#sponsorsTitle{
+    font-size: 100px;
+    margin-top: 80px;
+    margin-left: 50px;
+    color: #fff;
+    text-align: center;
+    display: block;
+}
+
+.tiers{
+    height: 100px;
+    padding: 20px;
+    margin: 5px;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 80%;
+}
+
+#diamond{
+    background-image: linear-gradient(to bottom right, #f4d4fc, #a474f4);
+}
+#platinum{
+    background-image: linear-gradient(to bottom right, #54d4dc, #2c6c7c);
+}
+#gold{
+    background-image: linear-gradient(to bottom right, #f4ecb4, #cc8c24);
+}
+#silver{
+    background-image: linear-gradient(to bottom right, #e4ecec, #a4a4a4);
+}
+#bronze{
+    background-image: linear-gradient(to bottom right, #ccb494, #6c440c);
+}
+#iron{
+    background-image: linear-gradient(to bottom right, #5c5c5c, #343434);
+}
+
+.description{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    margin: 50px;
+    display: block;
+    width: 100%;
+}
+
+header{
+    height: 100px;
+    background: whitesmoke;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: background-color 200ms linear;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+}
+
+.logo{
+    position: absolute;
+    z-index:10000;
+}
+
+.navbar a:hover{
+    color: rgb(175, 175, 175);
+    transition: 0.6s all ease;
+}
+
+.fullText:hover ul{
+    left:0px;
+    transition-delay: 0.1s;
+}
+
+.fulltext ul{
+    position: absolute;
+    list-style-type: none;
+    transition-delay: 2s;
+    left:-9999px;
+    color: white;
+    text-decoration: none;
+    background-color: whitesmoke;
+    padding:5px;
+}
+.fulltext ul li{
+    padding-top: 15px;
+}
+
+.fullText {
+    justify-content: center;
+    float: right;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    margin: 20px;
+    position: relative;
+}

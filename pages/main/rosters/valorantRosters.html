@@ -7,7 +7,7 @@
         content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
     <meta charset="UTF-8">
     <link rel="icon" href="../../../resource/imgs/stuyesportstransparent.png">
-    <meta content="StuyEsports - Rosters" property="og:title">
+    <meta content="StuyEsports - Valorant Roster" property="og:title">
     <meta content="Rosters list for the SCGC" property="og:description">
     <meta content="https://stuyesports.github.io" property="og:url">
     <meta content="#74b9ff" data-react-helmet="true" name="theme-color">
@@ -16,6 +16,35 @@
 </head>
 
 <body>
+    <header>
+        <a href="../../../index.html" class="logo">
+            <img src="../../../resource/imgs/stuyesportstransparent.png" height="90">
+        </a>
+        <div class="navbar">
+            <a href="#">
+                <div class="fullText">News</div>
+            </a>
+            <a href="../sponsors/sponsors.html">
+                <div class="fullText">Sponsors</div>
+            </a>
+            <a href="#">
+                <div class="fullText">
+                    Team
+                    <ul>
+                        <li><a href="#">Valorant</a></li>
+                        <li><a href="leagueRosters.html">League of Legends</a></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="../about/about.html">
+                <div class="fullText">About</div>
+            </a>
+            <a href="../../../index.html">
+                <div class="fullText">Home</div>
+            </a>
+            <div id="navLogoHidden" class="navLogo" herf="#"></div>
+        </div>
+    </header>
     <!--<div class="dropdownCont">
         Dropdown to select year and game.
         <select id="gameDrop" class="dropdown">
@@ -29,8 +58,8 @@
     </div>
     -->
     <div class="rosterMain">
-        <div id="gameTitle">Valorant</div>
-        <div class="lazyDisclaimer">A Team</div>
+        <div id="gameTitle">VALORANT</div>
+        <div class="lazyDisclaimer">A TEAM</div>
         <div class="players">
             <div class = "playerCard">
                 <img src="../../../resource/imgs/cypher.jpg" class="grayscaleZoom personIMG">
@@ -75,7 +104,9 @@
                 </div>
             </div>
         </div>
-        <div class="lazyDisclaimer">B Team</div>
+        <div id="awardsTitle">AWARDS</div>
+        <div id="awards"></div>
+        <div class="lazyDisclaimer">B TEAM</div>
         <div class="players">
             <div class = "playerCard">
                 <img src="../../../resource/imgs/raze.jpg" class="grayscaleZoom personIMG">
@@ -121,11 +152,11 @@
             </div>
             <!--<div id="bteam" class="team"></div>-->
         </div>
-        <div id="awardsTitle">Awards</div>
-        <div id="awards">Loading...</div>
+        <div id="awardsTitle">AWARDS</div>
+        <div id="awards"></div>
     </div>
 
-    <script src="rosters.js" type="module"></script>
+    <script src="valorantRosters.js" type="module"></script>
     <script src="../../../resource/js/jquery-3.6.0.min.js" type="text/javascript"></script>
 </body>
 
