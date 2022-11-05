@@ -98,9 +98,13 @@ header{
 
 .navbar {
     width: 100%;
+    height: 100px;
     position: fixed;
     top: 0;
     transition: background-color 200ms linear;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .navbar a{
