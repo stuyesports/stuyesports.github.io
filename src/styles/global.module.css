@@ -1,0 +1,11 @@
+/* THIS IS FOR THE WHOLE PAGE */
+.mainWrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* this is just for the part that isn't navbar or sidebar in mainLayout */
+.mainLayoutWrapper {
+    
+}
