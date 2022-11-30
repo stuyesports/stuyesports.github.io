@@ -21,7 +21,7 @@ export default class Home extends React.Component {
                     <div className={styles.mainTitle}>
                         <img className={styles.mainLogo} src={logo} />
                     </div>
-                    <video className={styles.mainVideo} loop autoPlay playsinline muted width="1920" height="910">
+                    <video className={styles.mainVideo} loop autoPlay playsInline muted width="1920" height="910">
                         <source src={video} type="video/mp4" />
                     </video>
                 </div>

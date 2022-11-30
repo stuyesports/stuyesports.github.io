@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 /* 
   Main Layout includes the NavBars wrapping the pages
@@ -16,6 +16,7 @@ const App = () => {
         <Route path="/" element={<MainLayout />}>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
     </Router>
