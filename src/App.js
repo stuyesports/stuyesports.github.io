@@ -7,13 +7,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from './components/layouts/mainLayout';
 
 import Home from './pages/home.js';
+import About from './pages/about';
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route exact path = "/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Route>
       </Routes>
     </Router>

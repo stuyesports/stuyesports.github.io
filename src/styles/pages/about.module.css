@@ -1,0 +1,16 @@
+.aboutTitle {
+    width: 100%;
+    font-size: 100px;
+    font-family: 'Anybody';
+    color: white;
+    padding-left: 20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.schoolInfo {
+    width: 100%;
+    height: 500px;  
+    padding: 20px;
+}
