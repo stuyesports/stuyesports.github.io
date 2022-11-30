@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "../../styles/common/footer.module.css";
+import styles from "../../../styles/common/footer.module.css";
 
 export default class Footer extends React.Component {
     constructor(props) {
@@ -10,6 +10,12 @@ export default class Footer extends React.Component {
     render = () => {
         return (
             <div className={styles.footer}>
+                <div className={styles.firstRow}>
+
+                </div>
+                <div className={styles.secondRow}>
+                    
+                </div>
                 <div className={styles.trademark}>© 2022, Stuyvesant Competitive Gaming Club</div>
             </div>
         )
