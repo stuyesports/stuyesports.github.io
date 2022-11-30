@@ -7,7 +7,6 @@ import logo from "../../../resource/logos/stuyesportstextonlyblack.png";
 import NavElem from "./navElem";
 
 // logo kinda looks bad on navbar, needs a new one
-
 export default class NavBar extends React.Component {
     constructor(props) {
         super(props);
