@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.81573388.css",
-    "main.js": "/static/js/main.6b7a98f6.js",
+    "main.css": "/static/css/main.f87c9c3f.css",
+    "main.js": "/static/js/main.836e24a6.js",
     "static/js/787.c8d4c1ce.chunk.js": "/static/js/787.c8d4c1ce.chunk.js",
+    "static/media/montage_vala_2022.mp4": "/static/media/montage_vala_2022.2a7ec77b2e4df37197a1.mp4",
+    "static/media/stuyesportstextonlyblack.png": "/static/media/stuyesportstextonlyblack.1f212edb90a1016e2009.png",
     "index.html": "/index.html",
-    "main.81573388.css.map": "/static/css/main.81573388.css.map",
-    "main.6b7a98f6.js.map": "/static/js/main.6b7a98f6.js.map",
+    "main.f87c9c3f.css.map": "/static/css/main.f87c9c3f.css.map",
+    "main.836e24a6.js.map": "/static/js/main.836e24a6.js.map",
     "787.c8d4c1ce.chunk.js.map": "/static/js/787.c8d4c1ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81573388.css",
-    "static/js/main.6b7a98f6.js"
+    "static/css/main.f87c9c3f.css",
+    "static/js/main.836e24a6.js"
   ]
 }
