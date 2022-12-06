@@ -11,11 +11,7 @@
     position: relative;
     display: flex;
     align-items: center;
-}
-.navLogo {
-    width: 150px;
-    left: 20px;
-    position: absolute;
+    justify-content: center;
 }
 
 .navMain {

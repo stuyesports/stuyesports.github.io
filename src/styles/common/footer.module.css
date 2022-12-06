@@ -6,16 +6,32 @@
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    transition: 0.3s all ease;
 }
 
 .firstRow {
-    width: 100%;
-    height: 80px;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .secondRow {
-    width: 100%;
+    width: 500px;
     height: 150px;
+    display: flex;
+}
+
+.thirdRow {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .trademark {
@@ -27,4 +43,10 @@
     font-family: 'Anybody';
     font-size: 16px;
     color: rgb(144, 144, 144);
+}
+
+@media screen and (max-width: 960px){
+    .footer {
+        background: white;
+    }
 }

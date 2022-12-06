@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "../../../styles/common/navBar.module.css";
 
-import logo from "../../../resource/logos/stuyesportstextonlyblack.png";
+import StuyLogo from "../icons/stuyLogo";
 
 import NavElem from "./navElem";
 
@@ -17,7 +17,7 @@ export default class NavBar extends React.Component {
         return (
             <div className={styles.navBar}>
                 <div className={styles.navLogoWrapper}>
-                    <img src={logo} className={styles.navLogo} />
+                    <StuyLogo width={150} />
                 </div>
 
                 {/* FULLSCREEN (Desktop) */}
