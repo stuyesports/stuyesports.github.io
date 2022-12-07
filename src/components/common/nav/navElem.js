@@ -17,7 +17,7 @@ export default class NavElem extends React.Component {
             this.props.dropdown = [
                 ["DropDown1", "Url"],
                 ["DropDown2", "Url"]
-            ]
+            ],
         */
     }
 

@@ -36,14 +36,14 @@ export default class About extends React.Component {
                             component="img"
                             height="230"
                             image={stuyImg}
-                            alt="Stuyvesant Highschool"
+                            alt="Stuyvesant High School"
                             />
                             <CardContent>
                                 <Stack spacing={0.5}>
                                     <Typography variant="body2" color="text.secondary">
                                         <LocationOn sx={{color: grey[500]}} /> New York, NY
                                     </Typography>
-                                    <Typography fontWeight={700}>Stuyvesant Highschool</Typography>
+                                    <Typography fontWeight={700}>Stuyvesant High School</Typography>
                                     <Typography variant="body2" color="text.secondary">
                                         "Stuyvesant High School has been a symbol of excellence in education for over a century. Our mission is to continue and enhance that commitment by providing an environment which will nurture and enhance the special academic talents of the students admitted to Stuyvesant."
                                     </Typography>

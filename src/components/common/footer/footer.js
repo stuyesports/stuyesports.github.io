@@ -5,6 +5,10 @@ import styles from "../../../styles/common/footer.module.css";
 import StuyLogo from "../icons/stuyLogo";
 import FooterLink from "./footerLink";
 
+/* 
+    TODO: Email List Signup Component
+*/
+
 export default class Footer extends React.Component {
     constructor(props) {
         super(props);
