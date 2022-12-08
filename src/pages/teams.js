@@ -7,7 +7,6 @@ import { Navigate } from "react-router-dom";
 
 import valorantCover from "../resource/imgs/valorantcover.jpg";
 import leagueCover from "../resource/imgs/leaguecover.jpg";
-import { TitleSharp } from "@mui/icons-material";
 
 export default class Teams extends React.Component {
     constructor(props) {
@@ -41,7 +40,7 @@ export default class Teams extends React.Component {
             <div className={styles.gameCard} onClick={() => {this.setState({ redirect: to })}}>
                 <div className={styles.opacityHover}></div>
                 {this.renderVerticalTitle(game)}
-                <img src={img} className={styles.gameCover} />
+                <img alt={game} src={img} className={styles.gameCover} />
             </div>
         )
     }
