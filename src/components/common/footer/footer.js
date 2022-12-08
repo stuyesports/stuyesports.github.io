@@ -20,9 +20,13 @@ export default class Footer extends React.Component {
                 <div className={styles.firstRow}>
                     <StuyLogo width={200} />
                 </div>
+                {
+                /*
+                IN CASE YOU WANNA ADD MAILING LIST INPUT FORM
                 <div className={styles.secondRow}>
                     
-                </div>
+                </div> */
+                }   
                 <div className={styles.thirdRow}>
                     <FooterLink name="HOME" to="/" />
                     <FooterLink name="ABOUT" to="/about" />

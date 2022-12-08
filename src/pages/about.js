@@ -75,6 +75,9 @@ export default class About extends React.Component {
                         </CardActionArea>
                     </Card>
                 </div>
+                <div className={styles.madeBy}>
+                    website made with ❤: Randy Sim (Stuy '24), Samuel Chen (Stuy '23)
+                </div>
             </div>
         )
     }

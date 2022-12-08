@@ -5,3 +5,15 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+.madeBy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Anybody';
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}

@@ -1,0 +1,17 @@
+.partnersContainer {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+}
+
+.partnersNotice {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Anybody';
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
