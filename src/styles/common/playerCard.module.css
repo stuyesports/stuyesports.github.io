@@ -1,0 +1,35 @@
+.playerCard {
+    width: 400px;
+    height: 500px;
+    background: white;
+    border-radius: 2px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.playerImage {
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(1);
+}
+
+.playerImage:hover {
+    filter: grayscale(0);
+}
+
+.playerName {
+    color: white;
+    font-family: 'Anybody';
+    font-size: 60px;
+    width: 50%;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: 0;
+}

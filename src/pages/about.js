@@ -10,6 +10,8 @@ import { grey } from "@mui/material/colors";
 import stuyImg from "../resource/imgs/stuyfront.jpg";
 import scgcImg from "../resource/logos/stuygamingclublogo.png";
 
+import Title from "../components/common/title";
+
 const stuyOfficialSite = "https://stuy.enschool.org/";
 const scgcSite = "https://stuyactivities.org/SCGC";
 
@@ -28,7 +30,7 @@ export default class About extends React.Component {
                 <Helmet>
                     <title>StuyEsports - About</title>
                 </Helmet>
-                <div className={styles.aboutTitle}>ABOUT US</div>
+                <Title text="ABOUT US" />
                 <div className={styles.schoolInfo}>
                     <Card sx={{ display: 'flex', maxWidth: 500, marginBottom: 5 }} onClick={() => this.externalRedirect(stuyOfficialSite)}>
                         <CardActionArea>

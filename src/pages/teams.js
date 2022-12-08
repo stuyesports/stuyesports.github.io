@@ -8,6 +8,8 @@ import { Navigate } from "react-router-dom";
 import valorantCover from "../resource/imgs/valorantcover.jpg";
 import leagueCover from "../resource/imgs/leaguecover.jpg";
 
+import Title from "../components/common/title";
+
 export default class Teams extends React.Component {
     constructor(props) {
         super(props);
@@ -20,9 +22,9 @@ export default class Teams extends React.Component {
     renderVerticalTitle = title => {
         let letters = [];
 
-        title.split("").forEach(l => {
+        title.split("").forEach((l, i) => {
             letters.push(
-                <div className={styles.verticalTitleLetter}>
+                <div className={styles.verticalTitleLetter} key={i} >
                     {l.toUpperCase()}
                 </div>
             )
@@ -57,7 +59,7 @@ export default class Teams extends React.Component {
                 <Helmet>
                     <title>StuyEsports - Teams</title>
                 </Helmet>
-                <div className={styles.title}>TEAMS</div>
+                <Title text="TEAMS" />
                 <div className={styles.mainSection}>
                     {this.renderGame("Valorant", "/teams/valorant", valorantCover)}
                     {this.renderGame("League", "/teams/league", leagueCover)}
