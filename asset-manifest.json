@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.91bdee70.css",
-    "main.js": "/static/js/main.faf6eab3.js",
+    "main.css": "/static/css/main.8bbedeff.css",
+    "main.js": "/static/js/main.d78c43d5.js",
     "static/js/787.c8d4c1ce.chunk.js": "/static/js/787.c8d4c1ce.chunk.js",
     "static/media/montage_vala_2022.mp4": "/static/media/montage_vala_2022.2a7ec77b2e4df37197a1.mp4",
     "static/media/valorantcover.jpg": "/static/media/valorantcover.bc3bbb2dca908156ee4d.jpg",
@@ -10,12 +10,12 @@
     "static/media/stuygamingclublogo.png": "/static/media/stuygamingclublogo.7853a7166a5b296a4da2.png",
     "static/media/stuyesportstextonlyblack.png": "/static/media/stuyesportstextonlyblack.1f212edb90a1016e2009.png",
     "index.html": "/index.html",
-    "main.91bdee70.css.map": "/static/css/main.91bdee70.css.map",
-    "main.faf6eab3.js.map": "/static/js/main.faf6eab3.js.map",
+    "main.8bbedeff.css.map": "/static/css/main.8bbedeff.css.map",
+    "main.d78c43d5.js.map": "/static/js/main.d78c43d5.js.map",
     "787.c8d4c1ce.chunk.js.map": "/static/js/787.c8d4c1ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.91bdee70.css",
-    "static/js/main.faf6eab3.js"
+    "static/css/main.8bbedeff.css",
+    "static/js/main.d78c43d5.js"
   ]
 }
