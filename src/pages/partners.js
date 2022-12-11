@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet";
 import styles from "../styles/pages/partners.module.css";
 
 import Title from "../components/common/title.js";
+import partnerCard from "../components/common/partnerCard";
+
 
 export default class Partners extends React.Component {
     constructor(props) {
@@ -19,7 +21,7 @@ export default class Partners extends React.Component {
                 <div>
                     <Title text="PARTNERS" />
                     <div className={styles.partnersContainer}>
-
+                        <partnerCard tier = "Iron Tier" />
                     </div>
                     <div className={styles.partnersNotice}>
                         Want to partner? Head over to our contacts page for more information.
