@@ -2,6 +2,8 @@
     width: 100%;
     min-height: 800px;
     height: auto;
+    display: flex;
+    justify-content: space-around;
 }
 
 .partnersNotice {

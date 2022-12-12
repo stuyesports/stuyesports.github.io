@@ -7,44 +7,54 @@ import ReactCardFlip from 'react-card-flip';
 import leagueIron from "../../resource/imgs/leagueIron.png";
 import valIron from "../../resource/imgs/valIron.png";
 
-export default class partnerCard extends React.Component{
+export default class PartnerCard extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             isFlipped: false
         };
-        this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick(e){
+    handleClick = (e) => {
         e.preventDefault();
         this.setState(prevState => ({isFlipped: !prevState.isFlipped}))
     }
 
+    /* 
+    INSTEAD OF DOING THIS, FOR BETTER REUSABILITY, MAYBE ACCEPT 
+    - cardName property
+    - cardImage property
+
+    so we don't have to hardcode each case.
+    */
     imgChooser(){
-        if(this.props.tier === "Iron Tier"){
+        if(this.props.tier === "Iron"){
             return(
-                <div>
-                    <img src={leagueIron}/>
-                    <img src={valIron}/>
+                <div className={styles.tierImagesContainer}>
+                    <img className={styles.tierImage} src={leagueIron}/>
+                    <img className={styles.tierImage} src={valIron}/>
                 </div>
             )
         }
     }
     render(){
         return(
-            <ReactCardFlip className = {styles.card} isFlipped = {this.state.isFlipped}>
-                <div className={styles.front}>
-                    {this.imgChooser};
-                    <div className={styles.tier} >
-                        {this.props.tier.toUpperCase()}
+            <ReactCardFlip isFlipped={this.state.isFlipped}>
+                <div className={styles.card}>
+                    <div className={styles.tier}>
+                        {this.props.tier.toUpperCase() + " TIER"}
                     </div>
-                    <button onClick={this.handleClick}>Benefits</button>
+                    {this.imgChooser()};
+                    <div className={styles.buttonContainer}>
+                        <button className={styles.benefits} onClick={this.handleClick}>See Benefits</button>
+                    </div>
                 </div>
-                <div className={styles.back}>
-                    whatever
+                <div className={styles.card}>
+                    lorem ipsum
 
-                    <button onClick={this.handleClick}>Tier</button>
+                    <div className={styles.buttonContainer}>
+                        <button className={styles.benefits} onClick={this.handleClick}>Tier</button>
+                    </div>
                 </div>
             </ReactCardFlip>
         )
