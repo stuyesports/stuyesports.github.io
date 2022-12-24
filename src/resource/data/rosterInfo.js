@@ -14,7 +14,7 @@ const RosterList = {
         "league": [
             genPlayer("Golden Ninja103", "Andy Zheng", "Player", "https://drive.google.com/uc?export=view&id=1_T_Jnjn37l9l4TBgMDde9Hmo43ymij7e", "https://www.youtube.com/@goldenninja1038"), 
             genPlayer("2hands arthritis", "Kenneth Cao", "Player", "https://drive.google.com/uc?export=view&id=11e0_d-IgRLaMDFxc34K6mm1J5undNRW1", ""), 
-            genPlayer("Kirby", "Brian Li", "Player", "", ""), 
+            genPlayer("Kirby", "Brian Li", "Player", "https://drive.google.com/uc?export=view&id=1jaIUzDYE75JV0nBHzwTOyhTfrVniSvDj", ""), 
             genPlayer(), 
             genPlayer()
         ]
