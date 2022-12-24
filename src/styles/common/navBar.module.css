@@ -3,6 +3,7 @@
     height: 105px;
     background: white;
     display: flex;
+    position: relative;
 }
 
 .navLogoWrapper {
@@ -47,6 +48,14 @@
     color: black;
 }
 
+.navSmallRight {
+    display: none;
+}
+
+.navDropdown {
+    display: none;
+}
+
 /* WHEN NAV SMALL */
 @media screen and (max-width: 960px){
     .navMain {
@@ -54,5 +63,35 @@
     }
     .navRight {
         display: none;
+    }
+    .navSmallRight {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        height: 100%;
+        right: 0;
+    }
+
+    .navHamburger {
+        cursor: pointer;
+    }
+
+    .navDropdown {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        position: absolute;
+        top: 105px;
+        z-index: 69;
+        width: 100%;
+        background: white;
+        padding-bottom: 30px;
+    }
+
+    .navMainElement {
+        flex-basis: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
     }
 }

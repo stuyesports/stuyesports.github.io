@@ -14,7 +14,7 @@ export default class PartnerCard extends React.Component {
             isFlipped: false
         };
     }
-
+    
     handleClick = (e) => {
         e.preventDefault();
         this.setState(prevState => ({isFlipped: !prevState.isFlipped}))
